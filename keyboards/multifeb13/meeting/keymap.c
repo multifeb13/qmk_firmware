@@ -19,8 +19,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT( /* Base */
     //LCTL(KC_Z),  LCTL(KC_X),  LCTL(KC_C), LCTL(KC_V)
     RCS(KC_M),		/* Teams : Toggle mute = Ctrl + Shift + M */
+    LCTL(KC_SPC),	/* Teams : Mute off temporary = Ctrl + Space */
     LALT(KC_A),	  /* ZOOM  : Toggle mute = Alt + A */
-    LCTL(KC_C),
-    LCTL(KC_SPC)	/* Teams : Mute off temporary = Ctrl + Space */
+    KC_SPC	      /* ZOOM  : Mute off temporary = Space */
   )
 };
