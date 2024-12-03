@@ -1,0 +1,58 @@
+{
+    "manufacturer": "multifeb13",
+    "keyboard_name": "proto3g",
+    "maintainer": "multifeb13",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": false,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "rgblight": true,
+        "nkro": false
+    },
+    "matrix_pins": {
+        "cols": ["D0", "D1"],
+        "rows": ["B5", "B6"]
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0x0213"
+    },
+    "rgblight": {
+        "led_count": 4,
+        "animations": {
+               "alternating": true,
+               "breathing": true,
+               "christmas": true,
+               "knight": true,
+               "rainbow_mood": true,
+               "rainbow_swirl": true,
+               "rgb_test": true,
+               "snake": true,
+               "static_gradient": true,
+               "twinkle": true
+        },
+        "sleep": true,
+        "max_brightness": 64,
+        "split": false,
+        "split_count": [6, 6]
+    },
+    "ws2812": {
+        "pin": "B2"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0}
+                {"matrix": [0, 1], "x": 1, "y": 0}
+                {"matrix": [1, 0], "x": 0, "y": 1}
+            ]
+       }
+    }
+}
