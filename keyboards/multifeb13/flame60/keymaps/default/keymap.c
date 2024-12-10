@@ -18,5 +18,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Q,          KC_E, KC_T, KC_U, KC_O,     KC_LEFT_BRACKET, KC_NO,            KC_NO,
         KC_A,          KC_D, KC_G, KC_J, KC_L,     KC_QUOTE,        KC_LEFT_GUI,      KC_LEFT_ALT,
         KC_Z,          KC_C, KC_B, KC_M, KC_DOT,   KC_RIGHT_SHIFT,  KC_RIGHT_GUI,     KC_RIGHT_ALT
+    ),
+    [_FUNC] = LAYOUT(
+        KC_ESCAPE,     KC_F2, KC_F4, KC_F6, KC_F8,           KC_F10,         KC_F12,           KC_NO,
+        KC_TAB,        KC_W,  KC_R,  KC_Y,  KC_PRINT_SCREEN, KC_PAUSE,       KC_RIGHT_BRACKET, KC_NO,
+        KC_LEFT_CTRL,  KC_S,  KC_F,  KC_H,  KC_HOME,         KC_LEFT,        KC_ENTER,         KC_BACKSPACE,
+        KC_LEFT_SHIFT, KC_X,  KC_V,  KC_N,  KC_END,          KC_DOWN,        MO(_FUNC),        KC_SPACE,
+        KC_F1,         KC_F3, KC_F5, KC_F7, KC_F9,           KC_F11,         KC_INSERT,        KC_DELETE,
+        KC_Q,          KC_E,  KC_T,  KC_U,  KC_SCROLL_LOCK,  KC_UP,          KC_NO,            KC_NO,
+        KC_A,          KC_D,  KC_G,  KC_J,  KC_PAGE_UP,      KC_RIGHT,       KC_LEFT_GUI,      KC_LEFT_ALT,
+        KC_Z,          KC_C,  KC_B,  KC_M,  KC_PAGE_DOWN,    KC_RIGHT_SHIFT, KC_RIGHT_GUI,     KC_RIGHT_ALT
     )
 };
