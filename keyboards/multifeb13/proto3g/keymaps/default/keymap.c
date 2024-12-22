@@ -17,28 +17,31 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * └───┴───┘
      */
     [_BASE] = LAYOUT(
-        KC_1, KC_2,
-        MO(_FUNC)
-    ),
-
-    /*
-     * ┌───┬───┐
-     * │ a │ b │
-     * ├───┼───┤
-     * │ fn│   │
-     * └───┴───┘
-     */
-    [_FUNC] = LAYOUT(
-        KC_A, KC_B,
-        KC_0
+        KC_1, KC_2
     )
 };
 
-void keyboard_post_init_user(void) {
-    // すべてのLEDに同じ設定をする場合はこちらの関数
-    // rgblight_sethsv(127, 255, 100) CYAN
+void matrix_init_user(void) {
+	rgblight_setrgb_at( 25,   0,   0, 0);
+	rgblight_setrgb_at(  0,  25,   0, 1);
+	rgblight_setrgb_at(  0,   0,  25, 2);
+	rgblight_setrgb_at( 48,  33,   2, 3);
+}
 
-    // 1つ1つのLEDに設定をする場合はこちらの関数
-    rgblight_sethsv_at(127, 255, 100, 0);   // 1番目のLEDの設定, CYAN
-    rgblight_sethsv_at(0, 255, 100, 1);   // 2番目のLEDの設定, RED
+void matrix_scan_user(void) {
+    static int counter = 0;
+    static int index = 0;
+
+    counter++;
+
+    if (counter > 10000) {
+        counter = 0;
+        index++;
+
+        rgblight_setrgb_at( 25,   0,   0, (index + 0) % 4);
+        rgblight_setrgb_at(  0,  25,   0, (index + 1) % 4);
+        rgblight_setrgb_at(  0,   0,  25, (index + 2) % 4);
+        rgblight_setrgb_at( 48,  33,   2, (index + 3) % 4);
+
+    }
 }
