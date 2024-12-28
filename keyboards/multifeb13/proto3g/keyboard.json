@@ -44,7 +44,7 @@
         "split_count": [6, 6]
     },
     "ws2812": {
-        "pin": "B6"
+        "pin": "B4"
     },
     "layouts": {
         "LAYOUT": {
