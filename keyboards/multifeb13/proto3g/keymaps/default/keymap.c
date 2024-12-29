@@ -23,10 +23,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 void matrix_init_user(void) {
-	rgblight_sethsv_at(   0, 255, 255, 0);  //HSV_RED
-	rgblight_sethsv_at( 170, 255, 255, 1);  //HSV_BLUE
-	rgblight_sethsv_at(  85, 255, 255, 2);  //HSV_GREEN
-	rgblight_sethsv_at(  43, 255, 255, 3);  //HSV_YELLOW
+	rgblight_sethsv_at( HSV_BLACK, 0);
+	rgblight_sethsv_at( HSV_BLACK, 1);
+	rgblight_sethsv_at( HSV_BLACK, 2);
+	rgblight_sethsv_at( HSV_BLACK, 3);
 }
 
 void matrix_scan_user(void) {
