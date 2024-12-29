@@ -42,10 +42,10 @@ void matrix_scan_user(void) {
         double sin_value = sin(radian);
         unsigned int led_v = 128 * sin_value;
 
-        rgblight_sethsv_at(   0, 255, led_v, (index + 0) % 4);
-        rgblight_sethsv_at( 170, 255, led_v, (index + 1) % 4);
-        rgblight_sethsv_at(  85, 255, led_v, (index + 2) % 4);
-        rgblight_sethsv_at(  43, 255, led_v, (index + 3) % 4);
+        rgblight_sethsv_at(   0, 255, led_v, (index + 0) % 4);  //HSV_RED
+        rgblight_sethsv_at( 170, 255, led_v, (index + 1) % 4);  //HSV_BLUE
+        rgblight_sethsv_at(  85, 255, led_v, (index + 2) % 4);  //HSV_GREEN
+        rgblight_sethsv_at(  30, 255, led_v, (index + 3) % 4);  //HSV_GOLD(Dark)
 
         if(degree >= 180){
           degree = 0;
