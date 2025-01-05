@@ -14,8 +14,8 @@
         "nkro": false
     },
     "matrix_pins": {
-        "cols": ["C6", "D7"],
-        "rows": ["B5"]
+        "cols": ["F4", "C6", "D4", "D7", "F7", "F6"],
+        "rows": ["F5"]
     },
     "processor": "atmega32u4",
     "url": "",
@@ -51,6 +51,10 @@
             "layout": [
                 {"matrix": [0, 0], "y": 0, "x": 0}
                 {"matrix": [0, 1], "y": 0, "x": 1}
+                {"matrix": [0, 2], "y": 0, "x": 2}
+                {"matrix": [0, 5], "y": 0, "x": 5}
+                {"matrix": [0, 4], "y": 0, "x": 4}
+                {"matrix": [0, 3], "y": 0, "x": 3}
             ]
        }
     }
