@@ -1,9 +1,13 @@
 {
-    "manufacturer": "multifeb13",
     "keyboard_name": "prac_xiao",
+    "manufacturer": "multifeb13",
+    "url": "",
     "maintainer": "multifeb13",
-    "bootloader": "rp2040",
-    "diode_direction": "COL2ROW",
+    "usb": {
+        "pid": "0x0004",
+        "vid": "0x0213",
+        "device_version": "1.0.0"
+    },
     "features": {
         "bootmagic": true,
         "command": false,
@@ -14,15 +18,11 @@
     },
     "matrix_pins": {
         "cols": ["GP26", "GP4"],
-        "rows": ["GP1", "GP2"]
+        "rows": ["GP26", "GP4"]
     },
+    "diode_direction": "COL2ROW",
     "processor": "RP2040",
-    "url": "",
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x0004",
-        "vid": "0x0213"
-    },
+    "bootloader": "rp2040",
     "layouts": {
         "LAYOUT": {
             "layout": [
