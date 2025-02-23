@@ -1,6 +1,6 @@
-# multifeb13/proto3g
+# multifeb13/hurricane6
 
-![multifeb13/proto3g](imgur.com image replace me!)
+![multifeb13/hurricane6](imgur.com image replace me!)
 
 *A short description of the keyboard/project*
 
@@ -10,11 +10,11 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    make multifeb13/proto3g:default
+    make multifeb13/hurricane6:default
 
 Flashing example for this keyboard:
 
-    make multifeb13/proto3g:default:flash
+    make multifeb13/hurricane6:default:flash
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
