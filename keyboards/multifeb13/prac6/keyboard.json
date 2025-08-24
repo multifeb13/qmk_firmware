@@ -1,0 +1,45 @@
+{
+    "manufacturer": "multifeb13",
+    "keyboard_name": "prac6",
+    "maintainer": "multifeb13",
+    "development_board": "promicro",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "rgblight": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "cols": ["F4", "C6", "D4", "D7", "F7", "F6"],
+        "rows": ["F5"]
+    },
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0000",
+        "vid": "0xFEED"
+    },
+    "rgblight": {
+        "led_count": 4,
+        "max_brightness": 64
+    },
+    "ws2812": {
+        "pin": "B4"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "y": 0, "x": 0}
+                {"matrix": [0, 1], "y": 0, "x": 1}
+                {"matrix": [0, 2], "y": 0, "x": 2}
+                {"matrix": [0, 5], "y": 0, "x": 5}
+                {"matrix": [0, 4], "y": 0, "x": 4}
+                {"matrix": [0, 3], "y": 0, "x": 3}
+            ]
+       }
+    }
+}
