@@ -15,12 +15,25 @@
  */
 #include QMK_KEYBOARD_H
 
+enum layer_number {
+  _TEAMS = 0,
+  _ZOOM,
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [0] = LAYOUT( /* Base */
+  [_TEAMS] = LAYOUT( /* for Teams */
     //LCTL(KC_Z),  LCTL(KC_X),  LCTL(KC_C), LCTL(KC_V)
     RCS(KC_M),		/* Teams : Toggle mute = Ctrl + Shift + M */
     LCTL(KC_SPC),	/* Teams : Mute off temporary = Ctrl + Space */
+    KC_NO,	      /* Nothing */
+    MO(_ZOOM)     /* Layer to _ZOOM */
+  ),
+
+  [_ZOOM] = LAYOUT( /* for ZOOM */
+    //LCTL(KC_Z),  LCTL(KC_X),  LCTL(KC_C), LCTL(KC_V)
     LALT(KC_A),	  /* ZOOM  : Toggle mute = Alt + A */
-    KC_SPC	      /* ZOOM  : Mute off temporary = Space */
+    KC_SPC,	      /* ZOOM  : Mute off temporary = Space */
+    KC_NO,	      /* Nothing */
+    KC_NO 	      /* Nothing */
   )
 };
